@@ -1,0 +1,18 @@
+body{
+	background-image: url(img/bg3.JPG);
+}
+.photos{
+	float:left;
+	margin:10px;
+	background-color:white;
+}
+.photos img{
+	height:150px;
+	padding:10px;
+}
+.photos p{
+	text-align:center;
+	font: 18px "微软雅黑";
+	
+}
+.cl{clear:both;}
