@@ -3,16 +3,38 @@ body{
 }
 .photos{
 	float:left;
-	margin:10px;
+	margin:30px;
 	background-color:white;
+	box-shadow:5px 5px 5px #cccccc;
+	border-box:5px;
+	transition:transform 0.3s linear;
+	position:relative;
+	overflow:hidden;
 }
 .photos img{
 	height:150px;
 	padding:10px;
+	
 }
 .photos p{
 	text-align:center;
 	font: 18px "微软雅黑";
+	position:absolute;
+	height:30px;
+	width:100%;
+	bottom:-50px;
+	background-color:#dcdcdc;
+	transition:all 0.3s linear;
 	
+}
+.photos:nth-child(2n){
+	transform:rotate(10deg);
+}
+.photos:hover{
+	transform:scale(1.2);
+	transform:rotate(-15deg);
+}
+.photos:hover p{
+	bottom:-20px;
 }
 .cl{clear:both;}
